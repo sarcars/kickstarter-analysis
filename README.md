@@ -7,10 +7,10 @@ This analysis was created to understand the results of historic Kickstarter camp
 ## Analysis and Challenges
 Analysis on the Kickstarter campaigns for theater (and specifically plays) was made by looking at the data in two different ways.  The first based on the month the campaign launched, and the second at the success or failure of the campaign based on the dollar amount at which the goal was set. 
 ### Analysis of Outcomes Based on Launch Date
-![Theater Outcomes vs Month of Launch](/resources/Theater_Outcomes_vs_Launch.png)
+![Theater Outcomes vs Launch](/Resources/Theater_Outcomes_vs_Launch.png)
 Using a pivot table, I was able to count the number of campaigns that were launched each month and then show these numbers by the outcome of successful, failed, or canceled.  Pivot tables are very useful when counting large amounts of data and using filters can show all this data in a more digestible format.  
 ### Analysis of Outcomes Based on Goals
-![Outcomes Based on Goal Grouping](/resources/Outcomes_vs_Goals.png)
+![Outcomes Based on Goal Grouping](/Resources/Outcomes_vs_Goals.png)
 This data is showing the number and percentage of campaigns successful or failed based on the amount that was set for the goal.  To analyze the data I used the `COUNTIFS()` function to sort only campaigns for plays by outcome and goal amount.  
 ### Challenges and Difficulties Encountered
 -Creating pivot tables and graphs was not particularly difficult although experimenting with data in columns or rows as well as the display of the chart can show different results.  Sometimes you need to switch the order of the fields in the row or change the field setting to something other than `Sum` such as `Count` or `Average`  
@@ -26,3 +26,4 @@ This data is showing the number and percentage of campaigns successful or failed
 
 - What are some other possible tables and/or graphs that we could create?
   - looking specifically at the data we have already graphed, I think it would be interesting to drill down to some of the subsets of the data.  What's really happening in those cases with a goal between 35000 and 45000?  In addition looking at data by number of backers and amount per pledge would be interesting and provide different data.  Doing a quick review it looks like 100% of the campaigns where spotlight is "true" are successful and 100% of where it is false they failed (or were canceled or are live).  This needs some looking into. 
+
